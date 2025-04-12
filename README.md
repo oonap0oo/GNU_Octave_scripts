@@ -3,6 +3,17 @@ Script files for use with GNU Octave
 
 [https://octave.org](https://octave.org/)
 
+## logistic_map.m
+![logistic_map_code_plot.png](logistic_map_code_plot.png)
+This GNU Ocave script calculates a image of the bifurcation diagram
+for the logistic map 
+
+Xn+1 = a. Xn.(1 - Xn)
+
+Iterations are done for increasing values of 'a'
+the logistic map is represented as a matrix
+the map is displayed using the imshow(à function
+
 ## rclpf.m
 ![screenshot_rclpf_result.png](screenshot_rclpf_result.png)
 
