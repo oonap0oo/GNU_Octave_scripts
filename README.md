@@ -5,7 +5,7 @@ Script files for use with GNU Octave
 
 ## logistic_map.m
 ![logistic_map_code_plot.png](logistic_map_code_plot.png)
-This GNU Ocave script calculates a image of the bifurcation diagram
+This GNU Ocave script calculates a image of the bifurcation diagram 
 for the logistic map 
 
 Xn+1 = a. Xn.(1 - Xn)
