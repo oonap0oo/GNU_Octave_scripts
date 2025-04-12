@@ -58,14 +58,11 @@ for index = 1:loops
     % calculate new values for x for all the different a parameters
     % in each loop iteration, both x and a are vectors
     x = a .* x .* (1.0 - x);
-    % calculate row indices for all values of x it uses a vectorised
-    % conversion to integer via .astype(int), 1 is subtracted because
-    % index anways starts at zero
+    % calculate row indices for all values 
     rows = round(x * (nrows - 1)) + 1;
     % elements of array logistic are incremented by 1
     % at rows determined by linear array rows
-    % and over all columns as directed by columns = np.arange(ncols)
-    %logistic[rows, columns] += 1
+    % and over all columns as directed by columns
     indices = sub2ind( size(logistic), rows, columns );
     ++logistic( indices );
 endfor
